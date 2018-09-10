@@ -4,6 +4,7 @@
   "description": "A word game",
   "main": "server.js",
   "scripts": {
+    "build": "react-scripts build",
     "client-install": "cd client && npm install",
     "start": "node server.js",
     "server": "nodemon server.js",
@@ -19,8 +20,10 @@
     "axios": "^0.18.0",
     "body-parser": "^1.18.3",
     "concurrently": "^3.5.1",
+    "create-react-app": "^1.5.2",
     "express": "^4.16.2",
     "mongoose": "^5.2.3",
-    "npm": "^6.4.1"
+    "npm": "^6.4.1",
+    "react-scripts": "^1.1.5"
   }
 }
