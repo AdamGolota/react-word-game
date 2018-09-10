@@ -1,20 +1,20 @@
 import React, {Component} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import {ListGroup, ListGroupItem} from 'reactstrap';
 class History extends Component {
 
     render(){
         return (
             <div>
-                <ul>
+                <ListGroup>
                     {this.props.words.map((word) => {
                         return (
-                        <li key={word._id}>
+                        <ListGroupItem className = "text-center" key={word._id}>
                             {word.value}
-                        </li>  
+                        </ListGroupItem>  
                         );
                     })}
-                </ul>
+                </ListGroup>
             </div>
         );
     }

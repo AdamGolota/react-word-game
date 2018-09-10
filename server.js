@@ -5,7 +5,7 @@ const mongoURI = require('./config/keys').mongoURI;
 const words = require('./routes/api/words');
 
 
-mongoose.connect(mongoURI, { useNewUrlParser: true });
+mongoose.connect(mongoURI, { useNewUrlParser: true }).catch(console.log);
 
 const app = express();
 
